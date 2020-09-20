@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 文字图标 -->
+    <link rel="stylesheet" href="./fonts/icomoon.css">
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- 页面样式 -->
+    <link rel="stylesheet" href="./css/index-1.css">
+    <!-- 引入jq文件 -->
+    <script src="./js/jquery-1.12.4.js"></script>
+    <!-- 项目样式 -->
+    <script src="./js/index-1.js"></script>
+
+    <script src="./js/echarts-1.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- 第一列 -->
+        <div class="cloumn">
+            <div class="overview panel">
+                <div class="inner">
+                    <div class="item">
+                        <h4>2190</h4>
+                        <span><i class="icon-dot" style="color: #006cff;"></i>设备总数</span>
+                    </div>
+                    <div class="item">
+                        <h4>2190</h4>
+                        <span><i class="icon-dot" style="color: #6acca3;"></i>季度新增</span>
+                    </div>
+                    <div class="item">
+                        <h4>2190</h4>
+                        <span><i class="icon-dot" style="color: #6acca3;"></i>运营设备</span>
+                    </div>
+                    <div class="item">
+                        <h4>2190</h4>
+                        <span><i class="icon-dot" style="color: #ed3f35;"></i>异常设备</span>
+                    </div>
+                </div>
+            </div>
+            <div class="monitor panel">
+                <div class="inner">
+                    <div class="tabs">
+                        <a class="active" href="javascript:void(0);">故障设备监控</a><a href="javascript:void(0);">异常设备监控</a>
+                    </div>
+                    <div class="content">
+                        <!-- 头部固定 -->
+                        <div class="head">
+                            <span class="col">故障时间</span>
+                            <span class="col">设备地址</span>
+                            <span class="col">异常代码</span>
+                        </div>
+                        <!-- 轮播 无限滚动 -->
+                        <div class="carousel-view">
+                            <!-- 内容  -->
+                            <div class="carousel">
+                                <div class="row">
+                                    <span>2020076</span>
+                                    <span class="address">深圳深圳市宝安区松柏路创维工业园2栋南区</span>
+                                    <span>1000001</span>
+                                    <i class="icon-dot" style="color: #61a8ff;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>2020076</span>
+                                    <span class="address">深圳深圳市宝安区松柏路创维工业园2栋南区</span>
+                                    <span>1000001</span>
+                                    <i class="icon-dot" style="color: #61a8ff;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>2020076</span>
+                                    <span class="address">深圳深圳市宝安区松柏路创维工业园2栋南区</span>
+                                    <span>1000001</span>
+                                    <i class="icon-dot" style="color: #61a8ff;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>2020076</span>
+                                    <span class="address">深圳深圳市宝安区松柏路创维工业园2栋南区</span>
+                                    <span>1000001</span>
+                                    <i class="icon-dot" style="color: #61a8ff;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>2020076</span>
+                                    <span class="address">深圳深圳市宝安区松柏路创维工业园2栋南区</span>
+                                    <span>1000001</span>
+                                    <i class="icon-dot" style="color: #61a8ff;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>2020076</span>
+                                    <span class="address">深圳深圳市宝安区松柏路创维工业园2栋南区</span>
+                                    <span>1000001</span>
+                                    <i class="icon-dot" style="color: #61a8ff;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>2020076</span>
+                                    <span class="address">深圳深圳市宝安区松柏路创维工业园2栋南区</span>
+                                    <span>1000001</span>
+                                    <i class="icon-dot" style="color: #61a8ff;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>2020076</span>
+                                    <span class="address">深圳深圳市宝安区松柏路创维工业园2栋南区</span>
+                                    <span>1000001</span>
+                                    <i class="icon-dot" style="color: #61a8ff;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>2020076</span>
+                                    <span class="address">深圳深圳市宝安区松柏路创维工业园2栋南区</span>
+                                    <span>1000001</span>
+                                    <i class="icon-dot" style="color: #61a8ff;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>2020076</span>
+                                    <span class="address">深圳深圳市宝安区松柏路创维工业园2栋南区</span>
+                                    <span>1000001</span>
+                                    <i class="icon-dot" style="color: #61a8ff;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>2020076</span>
+                                    <span class="address">深圳深圳市宝安区松柏路创维工业园2栋南区</span>
+                                    <span>1000001</span>
+                                    <i class="icon-dot" style="color: #61a8ff;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="point panel">
+                <div class="inner">
+                    <h3>点位分布</h3>
+                    <div class="chart clearfix">
+                        <div class="pie"></div>
+                        <div class="data">
+                            <div class="item">
+                                <h4>320,11</h4>
+                                <span><i class="icon-dot" style="color: #ED3F35;"></i>点击总数</span>
+                            </div>
+                            <div class="item">
+                                <h4>320,11</h4>
+                                <span><i class="icon-dot" style="color: #EACF19;"></i>本月新增</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第二列 -->
+        <div class="cloumn">
+            <div class="map">
+                <h3>
+                    <span class="icon-cube"></span>
+                    设备数据统计
+                </h3>
+                <div class="chart">
+                    <div class="geo"></div>
+                </div>
+            </div>
+            <div class="user panel">
+                <div class="inner">
+                    <h3>全国用户总量统计</h3>
+                    <div class="chart clearfix">
+                        <div class="bar"></div>
+                        <div class="data">
+                            <div class="item">
+                                <h4>320,11</h4>
+                                <span><i class="icon-dot" style="color: #ED3F35;"></i>用户总量</span>
+                            </div>
+                            <div class="item">
+                                <h4>320,11</h4>
+                                <span><i class="icon-dot" style="color:  #EACF19;"></i>本月新增</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 第三列 -->
+        <div class="cloumn">
+            <!-- one -->
+            <div class="order panel">
+                <div class=" inner">
+                    <div class="filter clearfix">
+                        <a href="javascript:;">365天</a>
+                        <a href="javascript:;">90天</a>
+                        <a class="active" href="javascript:;">30天</a>
+                        <a href="javascript:;">24小时</a>
+                    </div>
+                    <div class="data">
+                        <div class="item">
+                            <h4>32,011</h4>
+                            <span><i class="icon-dot" style="color: #ED3F35;"></i>用户总量</span>
+                        </div>
+                        <div class="item">
+                            <h4>3834</h4>
+                            <span><i class="icon-dot" style="color: #EACF19;"></i>销售额(万元)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tow 数据-->
+            <div class="sales panel">
+                <div class=" inner">
+                    <div class="caption">
+                        <span>销售额统计</span>
+                        <a href="javascript:;">年</a>
+                        <a href="javascript:;">季</a>
+                        <a class="active" href="javascript:;">月</a>
+                        <a href="javascript:;">周</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- shree 渠道分布-->
+            <div class="wrap clearfix">
+                <!-- 渠道分布 -->
+                <div class="channel panel">
+                    <div class="inner">
+                        <h3>渠道分布</h3>
+                        <div class="data">
+                            <div class="item">
+                                <h4>39 <small>%</small> </h4>
+                                <span><i class="icon-plane" style="color: #4c9bfd;"></i> 机场</span>
+                            </div>
+                            <div class="item">
+                                <h4>28<small>%</small></h4>
+                                <span><i class="icon-bag" style="color: #4c9bfd;"></i> 商场</span>
+                            </div>
+                            <div class="item">
+                                <h4>20<small>%</small></h4>
+                                <span><i class="icon-train" style="color: #4c9bfd;"></i> 地铁</span>
+                            </div>
+                            <div class="item">
+                                <h4>13<small>%</small></h4>
+                                <span><i class="icon-bus" style="color: #4c9bfd;"></i> 火车站</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 季度销售 -->
+                <div class="quarter panel">
+                    <div class="inner">
+                        <h3>一季度销售进度</h3>
+                        <div class="chart">
+                            <!-- 仪表图 -->
+                            <div class="gauge"></div>
+                            <div class="lable">75 <small>%</small></div>
+                        </div>
+                        <div class="data">
+                            <div class="item">
+                                <h4>1,320</h4>
+                                <span><i class="icon-dot" style="color: #4c9bfd;"></i> 销售额(万元)</span>
+                            </div>
+                            <div class="item">
+                                <h4>150%</h4>
+                                <span><i class="icon-dot" style="color: #ED3F35;"></i> 同比增长</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 全国热销 -->
+            <div class="hot panel">
+                <div class="inner">
+                    <div class=" nation ">
+                        <h3>全国热销</h3>
+                        <div class="all">
+                            <ul>
+                                <li><i class="icon-cup1" style="color: #ED3F35;"></i> 可爱多</li>
+                                <li><i class="icon-cup2" style="color: #68d8fe;"></i> 娃哈哈</li>
+                                <li><i class="icon-cup3" style="color: #4c9bfd;"></i> 喜之郎</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="province">
+                        <h3>各省热销 <i>// 近30日 //</i></h3>
+                        <ul class="sup">
+                            <li class="active"><span>北京</span><span>25,123 <i class="icon-up" style="color: #ED3F35;">
+                                    </i></span></li>
+                            <li><span>河北</span><span>25,123 <i class="icon-down" style="color: #36be90;"> </i></span>
+                            </li>
+                            <li><span>上海</span><span>25,123 <i class="icon-up" style="color: #ED3F35;"> </i></span>
+                            </li>
+                            <li><span>江苏</span><span>25,123 <i class="icon-down" style="color: #36be90;"> </i></span>
+                            </li>
+                            <li class="active"><span class="address">深圳</span><span>25,123 <i class="icon-up"
+                                        style="color: #ED3F35;"></i>
+                                    </i></span></li>
+                        </ul>
+                        <ul class="sup">
+                            <li><span>八喜</span><span>25,123 <i class="icon-up" style="color: #ED3F35;"></i></span></li>
+                            <li><span>好多鱼</span><span>25,123 <i class="icon-up" style="color: #ED3F35;"> </i></span>
+                            </li>
+                            <li><span>娃哈哈</span><span>25,123 <i class="icon-up" style="color: #ED3F35;"> </i></span>
+                            </li>
+                            <li><span>可爱多</span><span>25,123 <i class="icon-up" style="color: #ED3F35;"> </i></span>
+                            </li>
+                            <li><span>喜之郎</span><span>25,123 <i class="icon-up" style="color: #ED3F35;"> </i></span>
+                            </li>
+                            <li><span>蘑菇力</span><span>25,123 <i class="icon-up" style="color: #ED3F35;"> </i></span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

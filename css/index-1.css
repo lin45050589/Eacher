@@ -1,0 +1,434 @@
+/* 项目整体样式 */
+/* 1 body背景图 */
+body{
+    /* max-width: 1920px;
+    min-height: 768px ; */
+    background: url(../images/bg.jpg) no-repeat;
+    /* 背景图铺满盒子 */
+    background-size: cover;
+}
+/* 2 版心 */
+.container{
+    width: 100%;
+    max-width: 1920px;
+    min-height: 768px;
+    margin: 0 auto;
+    padding: 80px 20PX;
+    background: url(../images/logo.png) no-repeat ;
+    /* 背景图片自动缩放  显示完整的图案*/
+    background-size: contain;
+
+    /*设置父元素为伸缩盒子  */
+    display: flex;
+    color: #fff;
+}
+.cloumn{
+    flex: 3;
+}
+.cloumn:nth-child(2){
+    flex: 4;
+}
+/* 通用面板样式 */
+.panel{
+    border: 10px solid transparent;
+    border-width: 51px 40px 21px 130px ;
+    border-image: url(../images/border.png) 51 40 21 130 ;
+    box-sizing: border-box;
+    position: relative;
+}
+/* 通用面板内容 要绝对定位 */
+.inner{
+position: absolute;
+top: -51px;
+right: -40px;
+bottom: -21px;
+left: -130px;
+/* 通用内边距 */
+padding: 20px 30px ;
+}
+/* 数据概览 */
+.overview{
+    height: 110px;
+}
+.overview .item{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.overview .item h4{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.overview .item span{
+    color: #4c9bfd;
+}
+/* 设备监控 */
+.monitor{
+    height: 475px;
+    margin-top: 20px;
+}
+/* tab栏 */
+.monitor .tabs a{
+    font-size: 18px;
+    padding: 0 25px;
+    color: #4C9BFD;
+
+}
+.monitor .tabs a:nth-child(2){
+    border-left:2px solid #00F2F1;
+}
+/* 设置选中状态样式 交集选择器*/
+.monitor .tabs a.active{
+    color: #fff;
+}
+/* content区域 */
+.monitor .content .head{
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    line-height: 36px;
+    margin-top: 20px;
+    color: #68d8fe;
+    padding: 0 25px;
+    font-size: 14px;
+    
+}
+.monitor .content .head span{
+    /* display: block; */
+    width: 25%;
+    float: left;
+}
+.monitor .content .head span:nth-child(2){
+    width: 50%;
+}
+.monitor .content .head span:nth-child(3){
+   text-align: center;
+}
+/* carousel-view区域 */
+.monitor .carousel-view{
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+.monitor .carousel{
+    position: absolute;
+    width: 100%;
+}
+.monitor .carousel .row{
+    height: 35px;
+    line-height: 35px;
+    padding: 0 25px;
+    /* position: absolute; */
+    font-size: 14px;
+    color: #61a8ff;
+}
+.carousel .row span{
+    /* display: block; */
+    float: left;
+    width: 25%; 
+}
+
+.carousel .row span:nth-child(2){
+    width: 50%;
+    /* 超出文本省略号 */
+    /* 一行显示 */
+    white-space: nowrap;
+    /* 超出隐藏 */
+    overflow: hidden;
+    /* 隐藏文字显示省略号 */
+    text-overflow: ellipsis;
+  
+}
+.carousel .row span:nth-child(3){
+    text-align: center;
+}
+
+/* 图片使用绝对定位 */
+.monitor .carousel .icon-dot{
+    position: absolute;
+    left: 8px;
+    color:  #61a8ff;
+    line-height: 34px;
+    display: none;
+}
+
+/* 选中时样式：背景颜色为透明度 */
+.carousel .row.active{
+    background-color:  rgba(255, 255, 255, 0.1);
+    color: #68d8fe;
+ }
+  /* 选中时样式：显示字体图标 */
+  .carousel .row.active .icon-dot{
+      display:block;
+  }
+
+
+/* 点位分布 */
+.point{
+    height: 335px;
+    margin-top: 20px;
+}
+.point h3{
+    font-size: 18px;
+    padding: 10px;
+}
+.point .pie{
+    float: left;
+    width: 60%;
+    height: 235px;
+   background-color:  rgba(255, 255, 255, 0.1);
+}
+.point .data{
+    float: left;
+    width: 40%;
+    height: 235px;
+    /* margin-top: 25px; */
+    background: url(../images/rect.png) no-repeat;
+    background-size: cover;
+}
+.point .data .item{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    overflow: hidden;
+}
+.point .data .item h4{
+    font-size: 30px;
+    margin-top: 35px;
+}
+.point .data .item:nth-child(1).icon-dot{
+    color: #ED3F35;
+}
+.point .data .item:nth-child(2).icon-dot{
+    color: #EACF19;}
+    /* 第二列 */
+    .cloumn {
+        margin: 0 20px ;
+    }
+    .cloumn .map h3{
+        font-size: 20px;
+        padding: 45px 30px  20px ;
+    }
+    .cloumn .map h3 span{
+        color: #68d8fe;
+    }
+    .cloumn .map .chart{
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 738px;
+        height: 516px;
+    }
+
+    .cloumn .user{
+        height: 335px;
+        margin-top: 20px;
+        width: 738px;
+    }
+    .cloumn .user h3{
+        font-size: 18px;
+         padding: 10px;
+    }
+    
+    .cloumn .user .chart .bar{
+        float: left;
+        width: 70%;
+        height: 100%;
+        height: 235px;
+       background-color:  rgba(255, 255, 255, 0.1);
+    }
+
+    .cloumn .user .data{
+        float: left;
+        width: 30%;
+        height: 235px;
+        /* margin-top: 25px; */
+        background: url(../images/rect.png) no-repeat;
+        background-size: cover;
+    }
+    .cloumn .user .data .item{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        /* 解决h4盒子塌陷 */
+        /* overflow: hidden; */
+        border: 1px solid transparent
+    }
+    .cloumn .user .data .item h4{
+        font-size: 30px;
+        margin-top: 35px;
+    }
+
+
+
+    /* 第三列 */
+    .cloumn .order{
+        height: 145px;
+        margin-bottom: 20px;
+    }
+    .cloumn .order a{
+        float: left;
+        width: 70px;
+        height: 16px;
+        text-align: center;
+        color: #1950c4;
+        font-size: 16px;
+        line-height: 16px;
+        border-right: 2px solid #00f2f1;
+    }
+    /* 选中时样式：文本颜色为白色 */
+    .cloumn .order a.active{
+      color: #fff;
+    }
+    .cloumn .order .data .item{
+        width: 50%;
+        float: left;
+        /* text-align: center; */
+        overflow: hidden;
+        padding: 20px 15px ;
+    }
+/* one 统计 */
+    .cloumn .order .data .item h4{
+        font-size: 24px;
+        color: 24px;
+        margin-bottom: 10px;
+    }
+    .cloumn .sales{
+        height: 246px;
+        margin-bottom: 20px;
+    }
+    .sales .caption span{
+        font-size: 20px;
+       padding-right: 18px;
+        border-right: 2px solid #00f2f1;
+    }
+    .sales .caption a{
+        padding: 5px;
+        color: #1950c4;
+        font-size: 16px;
+        border-radius: 2px;
+        
+    }
+     /* 选中时样式：背景为色号#4c9bfd的圆角矩形 文字为白色 */
+    .sales .caption a.active{
+        background-color: #4c9bfd;
+        color: #fff;
+    }
+
+    /* 渠道分布 */
+    .cloumn .wrap{
+        height: 230px;
+        margin-bottom: 20px;
+    }
+    .cloumn .wrap .channel{
+        width: 48%;
+         float: left;
+         height: 100%;
+         margin-right: 20px;
+    } 
+
+    .cloumn .wrap .channel h3 ,.quarter h3{
+        font-size: 18px;
+    }
+    .cloumn .wrap .channel .data{
+        margin-top: 20px;
+        /* height: 60px; */
+    }
+    .cloumn .wrap .channel .data .item{
+       float: left;
+       width: 50%;
+       text-align: center;
+       margin-bottom: 24px;
+    }
+     .channel .data h4 , .quarter .data h4{
+        font-size: 28px;
+      
+    }
+    .cloumn .wrap .channel .data span ,.quarter .data span{
+        color:#4c9bfd;
+    }
+
+
+    /* 季度销售 */
+    .cloumn .wrap .quarter {
+        float: left;
+        width:48%;
+        height: 100%;
+    }
+    .cloumn .wrap .quarter .chart{
+        height: 80px;
+        background-color:  rgba(255, 255, 255, 0.1);
+        margin-top: 10px;
+
+    }
+    .cloumn .wrap .quarter .data{
+        margin-top: 10px;
+    }
+    .cloumn .wrap .quarter .item{
+        float: left;
+        width: 50%;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+   
+/* 全热销榜 */
+.cloumn .hot{
+    height: 280px;
+}
+.cloumn .hot .nation{
+    width: 30%;
+    float: left;
+}
+.cloumn .hot .nation h3,.province h3{
+    /* display: block; */
+    font-size: 20px;
+    padding: 8px;
+}
+
+.province h3 i{
+    font-size: 14px;
+    float: right;
+    color: #0bace6;
+}
+
+.cloumn .hot .all{   
+    margin-top: 20px;
+}
+.cloumn .hot .all li i{
+     font-size: 30px;
+     margin: 0 10px;
+     vertical-align: middle;
+}
+.cloumn .hot .all li{
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #4c9bfd;
+}
+
+/* 各省热销 */
+.province{
+    float: left;
+    width: 70%;
+}
+.province .sup{
+   width: 50%;
+   float: left;
+   margin-top: 10px;
+     color: #4995f4;
+}
+
+.province .sup li{
+    font-size: 14px;
+    padding: 6px 10px  ;
+    height: 30px;
+    /* color: #4995f4; */
+}
+.province .sup:nth-child(3){
+    background-color:  rgba(255, 255, 255, 0.1);
+    color: #4beaed;
+}
+/* 鼠标点击时 样式 */
+.province .sup li.active{
+    background-color:  rgba(255, 255, 255, 0.1);
+    color: #a3c6f2;
+}
+.province .sup span:nth-child(2){
+    float: right;
+}

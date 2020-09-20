@@ -1,0 +1,477 @@
+/* 背景图片 */
+body{
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+/* 版心 */
+.container{
+    min-width: 1024px;
+    max-width: 1920px;
+    min-height: 798px;
+    margin: 0 auto;
+    padding:88px 20px 0 ;
+    background: url(../images/logo.png) no-repeat;
+    background-size: contain;
+    display: flex;
+}
+.cloum{
+
+    flex: 3;
+}
+.cloum:nth-child(2){
+    flex: 4;
+    padding-top: 18px;
+}
+/* 通用面板 */
+.panel{
+    border: 1px solid transparent;
+    border-width: 51px 38px 21px 132px;
+    border-image: url(../images/border.png) 51 38 21 132;
+    position: relative;
+}
+/* 面板内容 */
+.inner{
+    position: absolute;
+    top: -51px;
+    right: -38px;
+    bottom: -21px;
+    left: -132px;
+    color: #fff;
+    padding: 20px 30px;
+}
+
+/*第一列 */
+.overview {
+    height: 110px;
+}
+.overview .item{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.overview .item h4{
+     margin-bottom: 10px;
+     font-size: 25px;
+}
+.overview .item span{
+    font-size: 15px;
+    color:#4c9bfd
+}
+/* 故障设备监控 */
+.monitor{
+    margin-top: 20px;
+    height: 474px;
+}
+.monitor .tabs a{
+    font-size: 18px;
+    color: #4c9bfd;
+    padding: 0 20px;
+}
+.monitor .tabs a:nth-child(2){
+    border-left:2px solid #00f2f1
+}
+.monitor .tabs a.active{
+    color: #fff
+}
+
+/* 头部固定 */
+.monitor .content .head{
+    background-color: rgba(255,255,255,0.1);
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    color: #68d8fe;
+    padding: 0px 30px;
+    margin-top: 20px;
+}
+.monitor .content .head span{
+    float: left;
+    width: 25%;
+}
+.monitor .content .head span:nth-child(2){
+    width: 50%;
+}
+.monitor .content .head span:nth-child(3){
+  text-align: center;
+}
+/* 轮播图 */
+.monitor .carousel-view{
+position: relative;
+height: 350px;
+overflow: hidden;
+}
+.monitor .carousel{
+    position: absolute;
+    width: 100%;
+}
+.monitor .carousel .row{
+    height: 35px;
+    padding: 0px 30px;
+    font-size: 14px;
+    /* color:#5798e8; */
+    line-height: 35px;
+    position: relative;
+    /* display: none; */
+}
+.carousel .row span{
+    /* display: block; */
+    float: left;
+    width: 25%;
+    color:#5697e5;
+}
+.carousel .row i{
+    position: absolute;
+    left: 5px;
+    top: 11px;
+    display: none;
+}
+
+.carousel div.active{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.carousel div.active span{
+    color:#68D8FE
+}
+.carousel div.active i{
+    display: block;
+}
+
+.carousel .row span:nth-child(2){
+    width: 50%;
+    /* 省略号 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.carousel .row span:nth-child(3){
+  text-align: center;
+}
+.point{
+    height: 335px;
+    margin-top: 20px;
+}
+.point h3{
+    font-size: 18px;
+}
+.point .pei{
+    float: left;
+    width: 60%;
+    height: 235px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 25px;
+}
+
+.point .data{
+    float: left;
+    width: 40%;
+    height: 235px;
+    margin-top: 25px;
+    background: url(../images/rect.png) no-repeat;
+    background-size: cover;
+}
+.point .data .item{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    overflow: hidden;
+}
+.point .data .item h4{
+    font-size: 22px;
+    margin-top: 35px;
+    margin-bottom: 5px;
+  
+}
+.point .data .item span{
+    font-size: 14px;
+    color: #4c9bfd;
+}
+
+/* 设备数据统计 */
+.map h3{
+    padding: 20px 30px;
+    font-size:22px;
+    font-weight: 400;
+}
+.map .chart{
+    height: 518px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0  20px;
+}
+.map .chart .geo{
+    height: 100%;
+}
+.user{
+    height: 335px;
+    margin:0  20px;
+    margin-top: 20px;
+
+}
+.user .chart{
+    height: 235px;
+    margin-top: 20px;
+}
+.user h3{
+    font-size: 20px;
+}
+.user .chart .bar{
+    float: left;
+    width: 70%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    
+}
+
+.user .chart .data{
+    float: left;
+    width: 30%;
+    height: 100%;
+    background: url(../images/rect.png) no-repeat;
+    background-size:100% 100%;
+    
+}
+.user .chart .data .item{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.user .chart .data .item h4{
+    font-size: 22px;
+    margin-top: 35px;
+}
+.user .chart .data .item span{
+    color:#3e82d9 ;
+    font-size: 14px;
+}
+
+/* 订单统计 */
+.order{
+    height:148px ;
+}
+.order .filter a{
+    float: left;
+    width: 80px;
+    font-size: 16px;
+    color:#1950c4;
+    border-right: 2px solid #00f2f1;
+    text-align: center;
+
+}
+.order .filter a.active{
+    color: #fff;
+    /* background-color: #4c9bfd; */
+}
+.order .filter a:last-child{
+    border-right: none
+}
+/* 数据 内容 */
+.order .data{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+   
+}
+.order .item{
+    float: left;
+    width: 50%;
+}
+.order .item h4{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.order .item span{
+    color:#3e82d9 ;
+    font-size: 14px;
+}
+
+/* 销售额统计 */
+.sales{
+    height: 245px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.sales .date span{
+    padding: 0 15px;
+    font-size: 22px;
+    border-right: 2px solid #00f2f1;
+}
+.sales .date a{
+    color: #0bace6;
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 16px;
+ 
+}
+
+/* active没有效果 */
+.sales .date a.active{
+    background-color: #5BA0C8;
+    color: #fff;
+    border-radius: 3px;
+}
+.sales .chart {
+    height: 160px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+}
+.sales .chart .line{
+    height: 100%;
+}
+
+
+
+
+
+/* 渠道分布 一季度销售进度 */
+.wrap{
+    height: 230px;
+    margin-top: 20px;
+}
+.wrap>div{
+    float: left;
+    width: 48%;
+    height: 100%;
+}
+.channel h3{
+    font-size: 22px;
+}
+.channel .data .item{
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+    text-align: center;
+}
+.channel .data .item h4{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.channel .data .item h4 small{
+    font-size: 16px;
+}
+.channel .data .item span{
+    color: #4c9bfd;
+    font-size: 14px;
+}
+
+
+
+/* 一季度销售进度 */
+.quarter{
+    margin-left: 4%;
+}
+.quarter h3{
+    font-size: 22px;
+}
+.quarter .chart{
+    height: 80px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: relative;
+
+}
+.quarter .chart .gauge{
+    height: 100%;
+  
+}
+.quarter .chart h4{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    font-size: 24px;
+}
+
+.quarter .data .item{
+    float: left;
+    width: 50%;
+    /* text-align: center; */
+}
+.quarter .data .item h4{
+    font-size: 20px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.quarter .data  span{
+    color:#4c9bfd;
+    font-size: 14px;
+}
+
+/* 全国热榜 */
+.hot{
+    height: 280px;
+    margin-top: 20px;
+}
+.hot .all{
+    float: left;
+    width: 30%;
+
+}
+.hot .all h3{
+    font-size: 22px;
+    /* line-height: 22px; */
+}
+.hot .all ul{
+    margin-top: 10px;
+}
+.hot .all ul>li{
+    height: 60px;
+    line-height: 60px;
+    color: #4c9bfd;
+    font-size: 14px;
+}
+.hot .all ul>li i{
+    font-size: 30px;
+    margin-right: 10px;
+    /* 图片与文字基线对齐 */
+    vertical-align: middle;
+}
+
+/* 各省热销 */
+.hot .province{
+    float: left;
+    width: 70%;
+}
+.hot .province h3{
+    font-size: 22px;
+    
+}
+.hot .province h3 i{
+    font-size: 12px;
+    color: #4c9bfd;
+    float: right;
+}
+.province .cup{
+    float: left;
+    width: 50%;
+    margin-top: 15px;
+}
+.province .cup li{
+    height: 30px;
+    line-height: 30px;
+    padding-right: 10px;
+}
+.province .cup li>span{
+    font-size: 14px;
+}
+.province .cup li>span:nth-child(2){
+    float: right;
+}
+.province .cup:nth-child(2){
+
+    color:#1950C4;
+}
+.province .cup:nth-child(3){
+    color: #00F2F1;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.province .cup:nth-child(2) li.active{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #4c9bfd;
+}
+
+
+
